@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="WPF_LoginForm.Views.StoreView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_LoginForm.Views"
+             xmlns:viewModel="clr-namespace:WPF_LoginForm.ViewModels"
+             xmlns:customControls="clr-namespace:WPF_LoginForm.CustomControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="Transparent">
+    <UserControl.DataContext>
+        <viewModel:StoreViewModel/>
+    </UserControl.DataContext>
+    <Grid>
+        <Label Content="Browse Games" 
+               FontSize="40" 
+               Foreground="White" 
+               Margin="-10,-10,10,10"/>
+        <ScrollViewer HorizontalScrollBarVisibility="Hidden"
+                      VerticalScrollBarVisibility="Hidden"
+                      Height="400" Width="800"
+                      Margin="0,50,0,0"
+                      Background="#16202c"
+                      Padding="0,10,0,0">
+            <StackPanel x:Name="StackPanel">
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
