@@ -36,6 +36,3 @@ ViewModels/      MVVM view models (Store, Library, Discounts, Login, Main)
 Views/           XAML views
 ```
 
-
-
->>>>>>> 9e5f9b0603b6a0e5a8ab362d9a24a2371afc54cc
