@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -58,7 +59,7 @@ namespace WPF_LoginForm.ViewModels
         }
         protected SqlConnection GetConnection()
         {
-            String _connectionString = "Server=(local); Database=TestDataBase; Integrated Security=true";
+            String _connectionString = ConfigurationManager.ConnectionStrings["GameStoreDb"].ConnectionString;
             return new SqlConnection(_connectionString);
         }
     }

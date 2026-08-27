@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ namespace WPF_LoginForm.Repositories
         private readonly string _connectionString;
         public RepositoryBase()
         {
-            _connectionString = "Server=(local); Database=TestDataBase; Integrated Security=true";
+            _connectionString = ConfigurationManager.ConnectionStrings["GameStoreDb"].ConnectionString;
         }
         protected SqlConnection GetConnection()
         {
