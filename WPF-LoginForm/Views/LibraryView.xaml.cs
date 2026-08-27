@@ -80,17 +80,17 @@ namespace WPF_LoginForm.Views
                     VerticalAlignment = VerticalAlignment.Center,
                     Margin = new Thickness(360, 0, 0, 0)
                 };
-                modernButton.Click += (s, e) =>
+                /*modernButton.Click += (s, e) =>
                 {
                     MessageBox.Show($"Launching {label.Text}");
-                };
+                };*/
 
-                /*modernButton.Click += (s, e) =>
+                modernButton.Click += (s, e) =>
                 {
                     try
                     {
                         MessageBox.Show($"Launching {label.Text}");
-                        string pathToExecutable = @"C:\Users\salam\Desktop\Risk of Rain 2.url";
+                        string pathToExecutable = @"""C:\Users\salam\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Steam\Risk of Rain 2.url""";
 
                         System.Diagnostics.Process.Start(pathToExecutable);
                     }
@@ -98,7 +98,7 @@ namespace WPF_LoginForm.Views
                     {
                         MessageBox.Show($"Failed to launch the program: {ex.Message}");
                     }
-                };*/
+                };
 
                 Grid.SetColumn(modernButton, 1);
                 grid.Children.Add(modernButton);
