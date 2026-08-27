@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # GameStore
 
 A Windows desktop game storefront built in C# / WPF, following the MVVM (Model-View-ViewModel) architectural pattern.
